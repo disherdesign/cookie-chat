@@ -1,20 +1,56 @@
+* {
+  color: #073642
+}
+
 html {
   height: 100%;
   width: 100%;
+
 }
 
 body {
   height: 95%;
   width: 100%;
   font-family: sans-serif;
+  background-color: #002b36; 
+}
+
+.header {
+  background: url('mountain.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  height: 40vw;
+  margin: -5px;
+  margin-bottom: 1em;
+}
+
+.message {
+margin-top: 2px;
+
+}
+
+.date {
+  float: right;
+  border-radius: 10px;
+  background-color: #002b36;
+  color: white;
+  padding: 5px;
 }
 
 .main-container {
   width: 75%;
+
   margin: 10px auto;
   background: rgba(255, 255, 255, 0.86);
   padding: 5px;
+
   border-radius: 10px;
+  background-color: #fff;
+}
+
+.messages-container {
+/*  position: relative;*/
 }
 
 .main-container h1 {
@@ -23,11 +59,21 @@ body {
 
 .text-box {
   margin: 0px auto;
-  width: 40%;
+  width: 100%;
 }
 
 p{
   text-align: center;
   margin: 3px 0;
-  font-size: 17px;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.picture {
+  position: absolute;
+  left: calc(50% - 112px);
+  top: calc(20vw - 112px);
 }
