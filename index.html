@@ -20,7 +20,7 @@
       <div class="messages-container">
           <div class="message" ng-repeat="message in messages"
             <p>
-            <span >{{message.message}} </span> <span class="date">{{message.createdAt.split('T').join(" ").slice(0,16)}}</span> </p><hr>
+            <span >{{message.message}} </span> <span class="date">{{message.createdAt.split('T').join(" ").slice(0,16).split('-').join('/')}}</span> </p><hr>
           </div>
           <div class="date"></div>
                 <form ng-submit="postMessage(message)">
